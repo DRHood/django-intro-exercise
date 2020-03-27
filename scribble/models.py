@@ -6,7 +6,7 @@ class Post(models.Model):
     body = models.CharField(max_length=300)
 
     def __str__(self):
-        return self.author
+        return self.title
 
 class Comment(models.Model):
     author = models.CharField(max_length=100)
