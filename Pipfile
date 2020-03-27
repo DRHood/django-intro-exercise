@@ -7,7 +7,6 @@ verify_ssl = true
 
 [packages]
 django = "*"
-psychopg2-binary = "*"
 psycopg2-binary = "*"
 
 [requires]
