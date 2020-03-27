@@ -1,8 +1,9 @@
-<h2>Comments <a href="">(+)</a></h2>
+<h2>Comments</h2>
+<p><a href="">+ comment</a></p>
 <ul>
     {% for comment in comment %}
         <li>
-            <a href="">{{ comment.author }}</a>
+            <a href="% url 'comment detail' pk=comment.pk %">{{ comment.author }}</a>
         </li>
     {% endfor %}
 </ul>
