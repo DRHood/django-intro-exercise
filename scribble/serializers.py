@@ -14,10 +14,10 @@ class PostSerializer(serializers.HyperlinkedModelSerializer):
 class CommentSerializer(serializers.HyperlinkedModelSerializer):
     post = serializers.HyperlinkedRelatedField(
         view_name='post_detail',
-        many=false,
-        read_only=false,
+        many=False,
+        read_only=False,
         queryset=Post.objects.all(),
     )
     class Meta:
-        model = Pomment
+        model = Comment
         fields = ('id', 'author', 'body', 'post')
